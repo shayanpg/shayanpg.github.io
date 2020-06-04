@@ -13,6 +13,7 @@
       body {
         color: #2D3142;   /* Gunmetal #2D3142 */
         font-family: 'Oxygen', sans-serif;
+        font-size: 20px;
       }
 
       h1 {
@@ -27,16 +28,16 @@
       a {
         color: #5386E4;  /* United Nations Blue #415A77 */
         text-decoration: none;
-        font-size: 20px;
       }
 
       h2 {
-        text-decoration: underline;
+        font-weight: bold;
       }
 
       #container {
         margin: 4rem auto;
         width: 70%;
+        max-width: 750px
       }
 
       #header {
@@ -44,19 +45,15 @@
         border-bottom-width: medium;
         border-bottom-style: solid;
         border-bottom-color: #2D3142;
+        padding-bottom: 5px;
       }
 
       #pic {
-        width: 200px;
-        margin-top: 20px;
+        width: 150px;
         margin-right: 10px;
         float: left;
+        position: relative;
       }
-
-      #bio {
-        font-size: 20px;
-      }
-
 
     </style>
   </head>
@@ -72,25 +69,41 @@
         </nav>
       </div>
 
-      <img id="pic" src="https://pbs.twimg.com/profile_images/1087556873811910656/T5CDZe3x_400x400.jpg" alt="Self-Portrait">
-
       <div id="bio">
+        <img id="pic" src="https://pbs.twimg.com/profile_images/1087556873811910656/T5CDZe3x_400x400.jpg" alt="Self-Portrait">
         <p>
            <strong>Hi! I'm Shayan.</strong>
            I'm a second-year student at UC Berkeley studying Computer Science, Data Science, and City & Regional Planning. <br>
-           I enjoy coding, designing, knitting, playing music, learning languages, and being hilarious (it's true because I think so).
-           I'm also a performing member and publicity officer for <a target="_blank"href="http://caltaiko.org">Cal Raijin Taiko</a>,
+           I enjoy coding, designing, problem-solving, knitting, learning languages, and playing music.
+           I'm also a performing member and the publicity officer for <a target="_blank"href="http://caltaiko.org">Cal Raijin Taiko</a>,
            a Japanese drumming ensemble at Berkeley.
         </p>
       </div>
 
+      <ul>
+        <li>Contact: shayan.ghosh@berkeley.edu</li>
+        <li>Resume: <a target="_blank" href="#">pdf (last updated March 2020)</a></li>
+      </ul>
+
       <h2>What I'm Working On</h2>
 
       <ul>
-        <li>Meticulist: an organization tool for fools</li>
+        <li>Meticulist: an organization tool for goal-setting, habit-tracking, and list-keeping
+          <ul>
+            <li>
+              I'm using this project to try and better learn the process of creating software, from design to deployment.
+              I hope to learn how to create an attractive GUI, how to integreate a database into an application,
+              and to gain experience managing projects on Github.
+              I'm also using Meticulist as an opportunity to practice data structures like priority queues
+              and sorting algorithms.
+            </li>
+            <li>Built with: Java (+ Swing, JDBC), MySQL</li>
+            <li><a target="_blank" href="https://github.com/shayanpg/meticulist">See more on Github</a></li>
+          </ul>
+        </li>
       </ul>
 
-      <h2>What I've Done</h2>
+      <!--<h2>What I've Done</h2>-->
     </div>
   </body>
 </html>
